@@ -2271,6 +2271,17 @@ process.umask = function() { return 0; };
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bootstrap_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bootstrap.js */ "./resources/assets/js/bootstrap.js");
 
+document.addEventListener("DOMContentLoaded", function () {
+  var logoutButton = document.getElementById("logout-btn");
+  var logoutForm = document.getElementById("logout-form");
+  if (logoutButton) {
+    // Check if logout button exists
+    logoutButton.addEventListener("click", function (event) {
+      event.preventDefault();
+      logoutForm.submit();
+    });
+  }
+});
 
 /***/ }),
 
