@@ -1,4 +1,5 @@
 import './bootstrap.js';
+import './home-react.js';
 
 document.addEventListener("DOMContentLoaded", function () {
     const logoutButton = document.getElementById("logout-btn");
