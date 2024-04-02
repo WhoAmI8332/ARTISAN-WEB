@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
     <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css' rel='stylesheet'>
-    <title>Laravel project - @yield('title')</title>
+    <title>Home page</title>
 </head>
 
 <body>
