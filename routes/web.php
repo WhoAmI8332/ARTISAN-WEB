@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ConferencesController;
+use Illuminate\Support\Facades\Auth;
 
 Route::get('/', function () {
     return view('welcome');
@@ -18,3 +19,9 @@ Route::post('logout', [LoginController::class, 'logout'])->name('logout');
 Route::resource('/home', ConferencesController::class)->except(['conferencesTable']);
 
 Route::get('conferences/table', [ConferencesController::class, 'conferencesTable']);
+
+Route::get('/auth-status', function () {
+    return response()->json(['authenticated' => Auth::check()]);
+});
+
+Route::get('/home/{id}/delete', [ConferencesController::class, 'destroy']);

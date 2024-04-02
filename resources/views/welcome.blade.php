@@ -23,7 +23,8 @@
             @auth
             <a href="{{ url('/home') }}" class="btn btn-primary">Home</a>
             @else
-            <a href="{{ route('login') }}" class="btn btn-primary">Log in</a>
+            <a href="{{ route('login') }}" class="btn btn-primary" style="margin-right: 10px;">Log in</a>
+            <a href="{{ url('/home') }}" class="btn btn-primary">Enter as Guest</a>
             @endauth
             @endif
         </div>

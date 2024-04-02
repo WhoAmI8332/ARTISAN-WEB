@@ -27,6 +27,10 @@ header {
   font-size: 6em;
 }
 
+.home-body {
+  background-color: #DCC3BE;
+}
+
 .login__body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;

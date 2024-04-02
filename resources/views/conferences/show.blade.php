@@ -13,7 +13,7 @@
                 <h2 class="card-title">{{ $conference->title }}</h2>
             </div>
             <div class="card-body">
-                <p class="card-text">User: {{ $conference->user }}</p>
+                <p class="card-text">Author: {{ $conference->user }}</p>
                 <p class="card-text">{{ $conference->description }}</p>
                 <a href="/home" class="btn btn-primary">Back to Home</a>
             </div>

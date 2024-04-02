@@ -1,0 +1,22 @@
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    margin-bottom: 15px;
+}
+
+.card-header {
+    color: white;
+    padding: 5px 10px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+.card:hover {
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
+    /* Increase shadow */
+}
