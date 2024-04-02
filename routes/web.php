@@ -24,4 +24,7 @@ Route::get('/auth-status', function () {
     return response()->json(['authenticated' => Auth::check()]);
 });
 
-Route::get('/home/{id}/delete', [ConferencesController::class, 'destroy']);
+Route::middleware('auth')->group(function () {
+    Route::get('/home/{id}/edit', [ConferencesController::class, 'edit']);
+    Route::get('/home/{id}/delete', [ConferencesController::class, 'destroy']);
+});
